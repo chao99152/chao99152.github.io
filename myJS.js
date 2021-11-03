@@ -196,21 +196,21 @@ document.getElementById('toggleMenu').addEventListener('click', function () {
 
 
 // 取消滾輪、手指滑動: stackoverflow gblazex's answer
-// function preventDefault(e) {
-//     e.preventDefault();
-// }
+function preventDefault(e) {
+    e.preventDefault();
+}
 
-// var supportsPassive = false;
-// try {
-//     window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-//         get: function () { supportsPassive = true; }
-//     }));
-// } catch (e) { }
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () { supportsPassive = true; }
+    }));
+} catch (e) { }
 
-// var wheelOpt = supportsPassive ? { passive: false } : false;
-// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-// window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-// window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-// window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
 
