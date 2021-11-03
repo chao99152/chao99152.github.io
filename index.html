@@ -1,2 +1,130 @@
- Welcome to my page
-<a href="https://chao99152.github.io/JS30_01">JS30_01</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="http://127.0.0.1:5501/index.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./myStyle.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1600px)" href="./myStylev1440-1600.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1440px)" href="./myStylev1200-1440.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1200px)" href="./myStylev992-1200.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 992px)" href="./myStylev768-992.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="./myStylev576-768.css">
+    <title>Chao's portfolio</title>
+</head>
+
+<body>
+    <!-- <div id="loadingPage">
+        <span class="loader"><span id="loaderInner"></span></span>
+    </div> -->
+    <div id="toggleMenu"><img src="./img/togglemenu.png" alt="" width="40px" height="40px"></div>
+    <Nav id="nav" class="hideMenu">
+        <ul>
+            <li class="navitem">
+                <a href="#landingPage" class="active">home</a>
+            </li>
+            <li class="navitem">
+                <a href="#aboutPage">About</a>
+            </li>
+            <li class="navitem">
+                <a href="#projectPage"> project</a>
+            </li>
+        </ul>
+    </Nav>
+
+    <div id="landingPage" class="ScrollSpy">
+        <img id="myIcon" src="./img/mylogo.jpg" alt="" width="160" height="32">
+        <div id="scrollBar"></div>
+        <p id="htmlText">HTML</p>
+        <p id="cssText">CSS</p>
+        <p id="bootstrapText">Bootstrap</p>
+        <p id="javaScriptText">JavaScript</p>
+        <p id="reactText">React</p>
+        <p id="nodejsText">Nodejs</p>
+        <p id="myqlText">MySQL</p>
+        <p id="subTitle">我叫趙軒弘，25歲，台中人，目前正在努力成為一名前端工程師</p>
+        <div id="mainTitle">我是老趙<span id="mainTitledot">.</span></div>
+        <div id="mainTitle2">但我不老</div>
+        <div id="myDot1"></div>
+        <div id="myDot2"></div>
+        <div id="myDot3"></div>
+        <div id="myDot4"></div>
+    </div>
+
+    <div id="aboutPage" class="ScrollSpy">
+        <h1 id="aboutPagetitle">About me</h1>
+        <div id="aboutContent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            我叫趙軒弘，台中人，喜歡挑戰不同的事物，嘗試人生的各種可能，熱愛運動、健身，
+            受朋友推薦開始自學前端程式，隨後參加資策會前端課程培訓，於今年10月完成專題並結訓，目前正在深化個人實力、準備作品集以及積極求職中。<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            主要技能有HTML、CSS、JS(ES6)、React等，有以Nodejs設計RESTful API及串接API經驗，熟悉SQL語法操作資料庫等。
+            <div id="resumeLink">
+                <a href="https://www.cakeresume.com/s--hpeazI9WaVgAFS__IbHW8Q--/yum34e" target="blank">
+                    My resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectPage" class="ScrollSpy">
+        <h1 id="projectPagetitle">My project</h1>
+        <div id="myProject">
+            <div id="project1" class="projects">
+                <div class="projectLink">
+                    <a href="https://github.com/chao99152/chao99152.github.io" target="blank"><img
+                            src="./img/GitHub-Mark-64px.png" alt="" width="40px" height="40px"></a>
+                    <a target="blank"><img src="./img/eye.png" alt="" width="40px" height="40px"></a>
+                </div>
+            </div>
+            <div id="project2" class="projects">
+                <div class="projectLink">
+                    <a href="https://github.com/chao99152/JS30/tree/master/JS30_01" target="blank">
+                        <img src="./img/GitHub-Mark-64px.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://chao99152.github.io/JS30/JS30_01/" target="blank" style="user-select: none;"><img
+                            src="./img/eye.png" alt="" width="40px" height="40px"></a>
+                </div>
+            </div>
+            <div id="project3" class="projects">
+                <div class="projectLink">
+                    <a href="https://github.com/chao99152/JS30/tree/master/JS30_02" target="blank">
+                        <img src="./img/GitHub-Mark-64px.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://chao99152.github.io/JS30/JS30_02/" target="blank"><img src="./img/eye.png" alt=""
+                            width="40px" height="40px"></a>
+                </div>
+            </div>
+            <div id="project4" class="projects">
+                <div class="projectLink">
+                    <a href="https://github.com/chao99152/JS30/tree/master/JS30_03" target="blank">
+                        <img src="./img/GitHub-Mark-64px.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://chao99152.github.io/JS30/JS30_03/" target="blank"><img src="./img/eye.png" alt=""
+                            width="40px" height="40px"></a>
+                </div>
+            </div>
+            <div id="project5" class="projects">
+                <div class="projectLink">
+                    <a href="https://github.com/chao99152/JS30/tree/master/JS30_05" target="blank">
+                        <img src="./img/GitHub-Mark-64px.png" alt="" width="40px" height="40px"></a>
+                    <a href="https://chao99152.github.io/JS30/JS30_05/" target="blank"><img src="./img/eye.png" alt=""
+                            width="40px" height="40px"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactInfo">
+            <div class="contactItem">
+                <a href="https://github.com/chao99152"><img src="./img//githubicon.png" alt="" width="35px" height="35px"></a>
+                &nbsp;&nbsp;account: chao99152
+            </div>
+            <div class="contactItem">
+                <img src="./img/mailicon.png" alt="" width="35px" height="35px">
+                &nbsp;&nbsp;&nbsp;&nbsp;email: yum34e@gmail.com
+            </div>
+        </div>
+    </div>
+
+    <script src="./myJS.js"></script>
+</body>
+
+</html>
